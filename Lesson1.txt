@@ -1,0 +1,46 @@
+What is System Design?
+Every second:
+
+Thousands of videos are uploaded.
+Millions of videos are watched.
+Millions of comments are posted.
+Billions of requests reach the servers.
+
+Yet it still works.
+
+How?
+Because its system is designed to handle huge scale.
+
+Goal of System Design
+
+We try to build systems that are:
+
+Fast ⚡
+Reliable ✅
+Scalable 📈
+Secure 🔒
+Available 24×7 🌍
+
+What We'll Learn
+
+By the end of this course, we'll understand terms like:
+
+Server
+Client
+DNS
+HTTP
+Load Balancer
+Reverse Proxy
+Cache
+CDN
+SQL
+NoSQL
+Redis
+Kafka
+Replication
+Sharding
+Consistent Hashing
+Rate Limiter
+Microservices
+
+and we'll know why they're used.
