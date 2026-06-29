@@ -1,0 +1,44 @@
+Scalability is the ability of a system to handle increasing numbers of users, requests, or data without significantly reducing performance. As an application grows, its infrastructure must also grow to continue serving users efficiently.
+
+There are two types of scalability:
+
+1. Vertical Scaling (Scaling Up)
+
+Vertical scaling means increasing the power of a single server by adding more CPU, RAM, or storage. It is simple to implement because the application continues running on one machine. However, it has limitations because a server can only be upgraded to a certain extent, and if that server fails, the entire application becomes unavailable.
+
+Advantages:
+
+Easy to implement
+No major architecture changes
+Suitable for small applications
+
+Disadvantages:
+
+Hardware limit exists
+Expensive upgrades
+Single point of failure
+
+2. Horizontal Scaling (Scaling Out)
+
+Horizontal scaling means adding more servers instead of upgrading one server. Incoming requests are distributed among multiple servers using a load balancer. This approach is used by companies like Google, Amazon, Netflix, and Facebook because it allows applications to serve millions of users.
+
+Advantages:
+
+High availability
+Better fault tolerance
+Can support millions of users
+Easier to expand as traffic grows
+
+Disadvantages:
+
+More complex architecture
+Requires load balancing and distributed systems
+
+In modern system design, horizontal scaling is generally preferred because it offers better reliability and long-term scalability.
+
+Key Points
+
+Scalability is the ability to handle growth.
+Vertical scaling improves one server.
+Horizontal scaling adds multiple servers.
+Large internet companies mainly use horizontal scaling

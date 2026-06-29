@@ -1,0 +1,42 @@
+When a database becomes too large for a single server, replication alone is not enough because the primary database still handles all write operations.
+
+Database Sharding solves this problem by dividing data into multiple smaller databases called shards.
+
+Each shard stores only a portion of the data.
+
+For example:
+
+Users with IDs 1–100000 may be stored in Shard 1.
+Users with IDs 100001–200000 may be stored in Shard 2.
+Users with IDs 200001–300000 may be stored in Shard 3.
+
+The application determines which shard should store or retrieve the requested data.
+
+Advantages:
+
+Distributes both read and write load.
+Supports very large databases.
+Improves scalability.
+Allows independent scaling of each shard.
+
+Disadvantages:
+
+More complex application logic.
+Difficult cross-shard queries.
+Data migration becomes challenging.
+Backup and maintenance are more complicated.
+
+Large companies such as Amazon, Instagram, and Facebook use sharding to manage massive amounts of user data.
+
+Difference Between Replication and Sharding
+
+Replication copies the same data to multiple databases to improve read performance and availability.
+
+Sharding splits different portions of data across multiple databases to improve both read and write scalability.
+
+Key Points
+
+Sharding divides data across multiple databases.
+Each shard stores different data.
+Replication copies the same data.
+Sharding is mainly used to scale databases horizontally.

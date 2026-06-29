@@ -1,0 +1,34 @@
+As applications become popular, a single database may not be able to handle all read requests. Database replication solves this problem by creating copies of the primary database.
+
+The database that accepts write operations is called the Primary (Master) database.
+
+The databases that receive copies of the data are called Replicas (Slaves/Read Replicas).
+
+When data is inserted or updated in the primary database, the same changes are copied to the replicas.
+
+Typical workflow:
+
+Write operations go to the Primary Database.
+Read operations are distributed among Replica Databases.
+
+Advantages:
+
+Improves read performance
+Reduces load on the primary database
+Provides backup if a replica exists
+Increases availability
+
+Disadvantages:
+
+Replication delay may occur.
+Users may temporarily see old data on replicas.
+More infrastructure to manage.
+
+Replication is commonly used by applications that receive many more read requests than write requests, such as social media platforms and e-commerce websites.
+
+Key Points
+
+One primary database handles writes.
+Multiple replicas handle reads.
+Replication improves scalability and availability.
+Replication may introduce temporary data inconsistency.

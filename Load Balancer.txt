@@ -1,0 +1,31 @@
+A Load Balancer is a component that distributes incoming requests across multiple servers so that no single server becomes overloaded.
+
+Without a load balancer, all user requests go to one server. If traffic suddenly increases, that server can become slow or crash. With a load balancer, requests are distributed among several servers, improving performance and reliability.
+
+Common load balancing algorithms include:
+
+Round Robin
+Requests are distributed one after another to each server in order.
+
+Least Connections
+The next request is sent to the server currently handling the fewest active connections.
+
+Weighted Round Robin
+Servers with higher capacity receive more requests than less powerful servers.
+
+Benefits of Load Balancing:
+
+Prevents server overload
+Improves application performance
+Increases availability
+Enables horizontal scaling
+Provides fault tolerance
+
+If one server fails, the load balancer automatically redirects traffic to healthy servers. This ensures that users can continue using the application without interruption.
+
+Key Points
+
+A load balancer sits between users and servers.
+It distributes requests efficiently.
+It improves scalability, availability, and reliability.
+It automatically avoids failed servers.
