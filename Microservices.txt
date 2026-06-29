@@ -1,0 +1,51 @@
+Microservices is an architectural style in which a large application is divided into multiple small, independent services. Each service is responsible for a specific business capability and can be developed, deployed, and scaled independently.
+
+For example, an e-commerce application may have separate services for:
+
+User Management
+Product Catalog
+Orders
+Payments
+Notifications
+
+Each microservice has its own database and business logic. Services communicate through APIs or message queues.
+
+Advantages:
+
+Independent deployment
+Easier scaling
+Better fault isolation
+Faster development by multiple teams
+Technology flexibility (different services can use different programming languages if needed)
+
+Disadvantages:
+
+Increased system complexity
+Network communication overhead
+Distributed transactions become challenging
+Monitoring and debugging require additional tools
+
+Microservices are commonly used by large technology companies because they support rapid development and horizontal scaling.
+
+Monolithic vs Microservices
+
+Monolithic Architecture:
+
+Single codebase
+Single deployment
+Easier to start
+Difficult to scale individual components
+
+Microservices Architecture:
+
+Multiple independent services
+Independent deployments
+Easier scaling
+More operational complexity
+
+Key Points
+
+Microservices divide applications into small independent services.
+Each service focuses on one business function.
+Services communicate using APIs or messaging systems.
+Microservices improve scalability and maintainability.

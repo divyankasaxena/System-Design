@@ -1,0 +1,43 @@
+A Message Queue enables asynchronous communication between different services. Instead of one service waiting for another service to complete its work, requests are placed into a queue and processed later.
+
+Without a message queue, if one service becomes slow, all dependent services may also become slow.
+
+With a message queue:
+
+A producer sends messages to the queue.
+The queue temporarily stores the messages.
+Consumers process the messages independently.
+
+Benefits:
+
+Loose coupling between services
+Better fault tolerance
+Improved scalability
+Handles traffic spikes efficiently
+Supports asynchronous processing
+
+Common use cases include:
+
+Sending emails
+SMS notifications
+Image processing
+Video transcoding
+Order processing
+Payment confirmation
+
+Popular message queue technologies include Apache Kafka, RabbitMQ, Amazon SQS, and Apache ActiveMQ.
+
+Challenges:
+
+Messages may be duplicated if retries occur.
+Ordering of messages must sometimes be preserved.
+Failed messages should be moved to a Dead Letter Queue (DLQ) for later investigation.
+
+Message queues are a key component of microservice architectures because they improve system reliability and allow services to operate independently.
+
+Key Points
+
+Producers create messages.
+Consumers process messages.
+Queues enable asynchronous communication.
+They improve scalability and resilience.

@@ -1,0 +1,44 @@
+An API Gateway is the single entry point for client requests in a microservices architecture. Instead of clients communicating directly with multiple services, all requests first pass through the API Gateway.
+
+Responsibilities of an API Gateway include:
+
+Request routing
+Authentication
+Authorization
+Rate limiting
+SSL termination
+Request and response transformation
+Logging and monitoring
+Load balancing integration
+
+Without an API Gateway, client applications must know the addresses of all backend services and communicate with each one separately. This increases complexity and tightly couples clients to the backend.
+
+With an API Gateway:
+
+Clients communicate with only one endpoint.
+The gateway forwards requests to the appropriate microservice.
+Security policies can be enforced in one place.
+Cross-cutting concerns are centralized.
+
+Advantages:
+
+Simplifies client applications
+Improves security
+Centralizes request handling
+Supports monitoring and analytics
+Enables easier API versioning
+
+Disadvantages:
+
+Can become a bottleneck if not scaled properly.
+Adds an additional network hop.
+Requires high availability because it is a critical component.
+
+Examples of API Gateway implementations include Kong, NGINX, AWS API Gateway, and Spring Cloud Gateway.
+
+Key Points
+
+API Gateway is the front door of a microservices architecture.
+It routes requests to the correct service.
+It handles authentication, authorization, and rate limiting.
+It simplifies communication between clients and backend services.

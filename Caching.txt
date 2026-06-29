@@ -1,0 +1,31 @@
+Caching is the process of storing frequently accessed data in a fast storage layer so that future requests can be served quickly without repeatedly querying the database. Since memory is much faster than disk storage, caches significantly reduce response time and improve application performance.
+
+When a user requests data, the application first checks the cache.
+
+If the data is found, it is returned immediately. This is called a Cache Hit.
+If the data is not found, the application retrieves it from the database, stores it in the cache, and then returns it to the user. This is called a Cache Miss.
+
+Benefits of Caching:
+
+Reduces database load
+Improves application speed
+Handles larger numbers of requests
+Reduces infrastructure cost
+Provides better user experience
+
+Popular caching systems include Redis and Memcached, with Redis being the most widely used because it supports various data structures and persistence options.
+
+Challenges of Caching:
+
+Cache can contain outdated (stale) data.
+Cache invalidation is difficult because updates in the database must be reflected in the cache.
+Memory is limited, so old data must eventually be removed using eviction policies such as LRU (Least Recently Used).
+
+Caching is widely used in social media feeds, e-commerce websites, gaming platforms, streaming services, and almost every large-scale web application.
+
+Key Points
+
+Cache stores frequently accessed data in memory.
+Cache hits are fast, while cache misses require a database query.
+Redis is one of the most popular caching solutions.
+Caching improves performance and reduces database traffic .

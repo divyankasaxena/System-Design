@@ -1,0 +1,33 @@
+A Content Delivery Network (CDN) is a network of servers distributed across different geographic locations. Its purpose is to deliver static content to users from a server that is physically closer to them, reducing latency and improving loading speed.
+
+Static content includes:
+
+Images
+CSS files
+JavaScript files
+Videos
+Fonts
+Documents
+
+Without a CDN, every user must download content from the origin server. Users located far from the server experience higher latency.
+
+With a CDN, copies of static files are stored on multiple edge servers around the world. When a user requests an image or video, the request is served by the nearest edge server instead of the origin server.
+
+Advantages of CDN:
+
+Faster page loading
+Reduced latency
+Lower load on the origin server
+Better scalability
+Improved availability during traffic spikes
+
+When a requested file is not available at the nearest edge server, the CDN retrieves it from the origin server, stores it temporarily, and serves it to future users.
+
+Large companies such as Netflix, YouTube, Amazon, and Facebook rely heavily on CDNs to deliver content efficiently across the globe.
+
+Key Points
+
+CDN stores copies of static files on edge servers.
+Users receive content from the nearest server.
+CDNs improve speed, scalability, and reliability.
+Dynamic requests usually continue to the application server.
