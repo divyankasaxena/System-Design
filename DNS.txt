@@ -1,0 +1,37 @@
+The Domain Name System (DNS) translates human-readable domain names into IP addresses that computers use to communicate.
+
+For example, users type:
+
+www.example.com
+
+Instead of remembering:
+
+192.168.x.x
+
+When a user enters a domain name into a browser, the browser first checks its local cache. If the address is not found, the request is sent through the DNS resolution process until the correct IP address is returned.
+
+The browser then connects to the server using that IP address.
+
+Benefits of DNS:
+
+Easy-to-remember website names.
+Faster access through DNS caching.
+Supports load balancing by returning different IP addresses.
+Enables high availability.
+
+DNS records include:
+
+A Record – Maps a domain to an IPv4 address.
+AAAA Record – Maps a domain to an IPv6 address.
+CNAME Record – Creates an alias for another domain.
+MX Record – Specifies mail servers.
+TXT Record – Stores verification and security information.
+
+Without DNS, users would need to remember numerical IP addresses for every website.
+
+Key Points
+
+DNS converts domain names into IP addresses.
+Browsers use DNS before contacting servers.
+DNS caching improves performance.
+Different DNS records serve different purposes

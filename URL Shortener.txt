@@ -1,0 +1,64 @@
+URL Shortener Design
+
+A URL Shortener converts long URLs into shorter, easy-to-share links.
+
+Example:
+
+Original URL:
+
+https://www.example.com/products/mobile/samsung-galaxy-ultra...
+
+Short URL:
+
+https://short.ly/Ab12X
+
+When a user visits the short URL, the application looks up the original URL in the database and redirects the user.
+
+Core Components:
+
+URL Generation Service
+Database
+Cache
+API
+Redirect Service
+
+Requirements:
+
+Unique short URLs
+Fast redirection
+High availability
+Scalability
+Analytics (optional)
+
+A unique identifier can be generated using:
+
+Auto-increment IDs
+Random strings
+Base62 encoding
+Hashing techniques
+
+Caching is commonly used because popular links may receive millions of requests. Frequently accessed URLs are stored in Redis to reduce database load.
+
+Additional features:
+
+Link expiration
+Custom aliases
+Click analytics
+QR code generation
+Rate limiting
+
+Challenges:
+
+Preventing duplicate short URLs.
+Handling billions of links.
+Ensuring fast redirection.
+Maintaining high availability.
+
+URL shorteners are excellent examples of applying concepts such as databases, caching, load balancing, and scalability together.
+
+Key Points
+
+URL shorteners map long URLs to short unique identifiers.
+Databases store URL mappings.
+Redis improves redirect performance.
+The system must support high scalability and availability.

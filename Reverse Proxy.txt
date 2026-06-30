@@ -1,0 +1,37 @@
+A Reverse Proxy is a server that sits between clients and backend servers. Clients send requests to the reverse proxy instead of directly communicating with application servers.
+
+The reverse proxy receives incoming requests, forwards them to the appropriate backend server, and returns the response to the client.
+
+Responsibilities of a Reverse Proxy:
+
+Request routing
+Load balancing
+SSL termination
+Caching static content
+Compression
+Security filtering
+Hiding backend server details
+
+Advantages:
+
+Improves security by hiding internal infrastructure.
+Reduces server load through caching.
+Supports load balancing.
+Simplifies SSL certificate management.
+Protects against malicious traffic.
+
+Popular reverse proxy software includes:
+
+NGINX
+HAProxy
+Apache HTTP Server
+Traefik
+
+Reverse proxies are commonly placed before application servers in production environments.
+
+Key Points
+
+Reverse Proxy sits between clients and backend servers.
+It forwards requests to appropriate servers.
+It improves security, scalability, and performance.
+NGINX is one of the most widely used reverse proxies.

@@ -1,0 +1,33 @@
+Database indexing is a technique used to improve the speed of data retrieval operations. Instead of scanning every row in a table, the database uses an index to quickly locate the required records.
+
+Without an index, the database performs a Full Table Scan, checking each row until it finds the desired data. This becomes inefficient for tables containing millions of records.
+
+An index works similarly to the index of a book. Rather than reading every page, you use the index to jump directly to the required information.
+
+Benefits of Indexing:
+
+Faster search operations
+Improved query performance
+Reduced database response time
+Efficient sorting and filtering
+
+Indexes are especially useful for columns that are frequently used in:
+
+WHERE clauses
+JOIN operations
+ORDER BY clauses
+GROUP BY clauses
+
+Disadvantages:
+
+Additional storage is required.
+Insert, Update, and Delete operations become slower because indexes must also be updated.
+Too many indexes can negatively impact write performance.
+
+Primary keys are automatically indexed in most relational databases. Developers can also create indexes on other frequently searched columns.
+
+Key Points
+
+Indexes improve read performance.
+They reduce the need for full table scans.
+Primary keys are automatically indexed.
