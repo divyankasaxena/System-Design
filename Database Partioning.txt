@@ -1,0 +1,48 @@
+As applications grow, a single database server may struggle to handle increasing amounts of data and traffic. Database Partitioning is a technique used to divide a large table into smaller, more manageable pieces called partitions. Unlike sharding, all partitions still belong to the same logical database.
+
+Partitioning improves performance because queries can access only the relevant partition instead of scanning the entire table.
+
+Common types of partitioning include:
+
+Range Partitioning
+Data is divided based on a range of values, such as dates or IDs.
+
+Example:
+
+Orders from 2023 in one partition.
+Orders from 2024 in another partition.
+
+List Partitioning
+Rows are grouped based on predefined values.
+
+Example:
+
+North Region
+South Region
+East Region
+West Region
+
+Hash Partitioning
+A hash function determines which partition stores a row. This distributes data more evenly and helps prevent hotspots.
+
+Advantages:
+
+Faster query execution
+Better management of large tables
+Improved maintenance
+Easier backup and archival
+
+Disadvantages:
+
+Increased database complexity
+Poor partition design can reduce performance
+Cross-partition queries may still be expensive
+
+Partitioning is commonly used in applications with very large datasets, especially where data naturally falls into categories such as dates, regions, or customer IDs.
+
+Key Points
+
+Partitioning splits one large table into smaller partitions.
+All partitions remain part of the same logical database.
+Queries become faster because fewer rows are scanned.
+Different partitioning strategies suit different use cases.

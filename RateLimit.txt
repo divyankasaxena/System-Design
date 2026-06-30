@@ -1,0 +1,55 @@
+Rate Limiting is a technique used to control how many requests a client can send within a specific time period.
+
+Its primary purpose is to:
+
+Prevent abuse
+Protect servers
+Reduce spam
+Improve fairness among users
+
+Example:
+A login API may allow only five login attempts per minute. If the limit is exceeded, the server returns an HTTP 429 (Too Many Requests) response.
+
+Common rate limiting algorithms include:
+
+Fixed Window
+Counts requests within fixed time intervals. It is simple but may allow sudden bursts at window boundaries.
+
+Sliding Window
+Uses a continuously moving time window, providing smoother request control.
+
+Token Bucket
+Tokens are added to a bucket at a fixed rate. Each request consumes one token. Temporary bursts are allowed as long as tokens are available.
+
+Leaky Bucket
+Processes requests at a constant rate, smoothing traffic spikes.
+
+Rate limiting is commonly implemented at:
+
+API Gateway
+Reverse Proxy
+Load Balancer
+
+Redis is often used to store request counters because it provides very fast read and write operations.
+
+Common use cases:
+
+Login protection
+OTP requests
+Payment APIs
+Public APIs
+AI service APIs
+
+Benefits:
+
+Prevents brute-force attacks
+Improves server stability
+Ensures fair resource usage
+Reduces infrastructure costs
+
+Key Points
+
+Rate limiting controls request frequency.
+Different algorithms suit different workloads.
+Redis is commonly used for request counting.
+API Gateways often enforce rate limits.

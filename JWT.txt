@@ -1,0 +1,44 @@
+JWT (JSON Web Token) is a compact token format used for authentication and authorization in modern web applications.
+
+After a user logs in successfully, the server generates a JWT and sends it to the client.
+
+The client stores the token and includes it in future API requests.
+
+A JWT consists of three parts:
+
+Header
+Payload
+Signature
+
+The Header contains information about the token type and signing algorithm.
+
+The Payload stores claims such as:
+
+User ID
+Username
+Role
+Expiration time
+
+The Signature ensures that the token has not been modified.
+
+Advantages:
+
+Stateless authentication
+Reduces server-side session storage
+Scales well in distributed systems
+Works well with microservices
+
+Disadvantages:
+
+Revoking tokens is difficult before expiration.
+Sensitive information should never be stored directly in the payload.
+Long expiration times increase security risks.
+
+JWT is commonly used in REST APIs, Single Page Applications (SPA), and mobile applications.
+
+Key Points
+
+JWT enables stateless authentication.
+It contains Header, Payload, and Signature.
+The signature protects against tampering.
+Widely used in modern API-based applications.

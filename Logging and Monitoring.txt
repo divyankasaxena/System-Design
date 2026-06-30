@@ -1,0 +1,56 @@
+Logging and Monitoring are essential for maintaining reliable software in production.
+
+Logging records events that occur within an application. These records help developers debug issues, track user activity, and understand application behavior.
+
+Common log types:
+
+Information logs
+Warning logs
+Error logs
+Debug logs
+
+A good log entry typically includes:
+
+Timestamp
+Log level
+Service name
+Error message
+Request ID
+
+Monitoring continuously tracks the health and performance of an application.
+
+Common metrics include:
+
+CPU usage
+Memory usage
+Disk usage
+Network traffic
+Request latency
+Error rate
+Requests per second
+
+Monitoring systems generate alerts whenever predefined thresholds are exceeded.
+
+Benefits:
+
+Faster issue detection
+Easier debugging
+Performance analysis
+Capacity planning
+Better system reliability
+
+Popular tools:
+
+Prometheus
+Grafana
+ELK Stack (Elasticsearch, Logstash, Kibana)
+Splunk
+
+In large-scale systems, centralized logging and monitoring are essential because applications often run on hundreds or thousands of servers.
+
+Key Points
+
+Logging records application events.
+Monitoring tracks system health and performance.
+Alerts notify engineers about problems.
+Centralized monitoring improves reliability.

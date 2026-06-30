@@ -1,0 +1,56 @@
+Authentication and Authorization are fundamental security concepts but serve different purposes.
+
+Authentication answers the question:
+
+"Who are you?"
+
+It verifies the identity of a user.
+
+Examples:
+
+Username and password
+OTP verification
+Fingerprint authentication
+Face recognition
+
+After successful authentication, the system knows who the user is.
+
+Authorization answers the question:
+
+"What are you allowed to do?"
+
+Once the user's identity is verified, the system checks their permissions.
+
+Example:
+
+An Admin can:
+
+Add products
+Delete products
+Manage users
+
+A Customer can:
+
+View products
+Place orders
+Update personal profile
+
+Even though both users are authenticated, they have different permissions.
+
+Advantages of proper authorization:
+
+Protects sensitive resources
+Prevents unauthorized access
+Supports role-based access control
+
+Common authorization models:
+
+Role-Based Access Control (RBAC)
+Attribute-Based Access Control (ABAC)
+
+Key Points
+
+Authentication verifies identity.
+Authorization verifies permissions.
+Authentication happens before authorization.
+Both are essential for secure applications.
