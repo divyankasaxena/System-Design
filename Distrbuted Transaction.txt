@@ -1,0 +1,59 @@
+In a microservices architecture, a single business operation often involves multiple services, each with its own database.
+
+For example, placing an order may involve:
+
+Order Service
+Payment Service
+Inventory Service
+Notification Service
+
+If one step fails after another has already succeeded, the system can become inconsistent.
+
+Traditional database transactions cannot span multiple independent databases efficiently.
+
+The Saga Pattern solves this problem by dividing a distributed transaction into multiple local transactions.
+
+Each service performs its own transaction independently.
+
+If all steps succeed, the business operation completes successfully.
+
+If one step fails, previously completed actions are reversed using Compensation Transactions.
+
+Example:
+
+Payment Successful
+Inventory Update Failed
+Refund Payment
+Cancel Order
+
+There are two common Saga implementations:
+
+Choreography
+
+Services communicate using events.
+No central controller.
+Suitable for smaller systems.
+
+Orchestration
+
+A central Saga Orchestrator coordinates all steps.
+Easier to monitor and debug.
+Preferred for complex workflows.
+
+Advantages:
+
+Better scalability
+Loose coupling
+Supports eventual consistency
+
+Challenges:
+
+Compensation logic increases complexity.
+Temporary inconsistency may exist during execution.
+
+Key Points
+
+Distributed transactions span multiple services.
+Saga uses local transactions and compensation.
+Orchestration and Choreography are two implementation styles.
+Saga enables scalable microservice workflows.

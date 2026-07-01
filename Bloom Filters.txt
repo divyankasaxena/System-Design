@@ -1,0 +1,42 @@
+A Bloom Filter is a space-efficient probabilistic data structure used to quickly determine whether an element may exist in a dataset.
+
+Unlike traditional data structures, a Bloom Filter does not store the actual data. Instead, it stores a compact representation using multiple hash functions.
+
+A Bloom Filter can produce two possible results:
+
+Definitely Not Present
+Possibly Present
+
+If it says an element is not present, the answer is guaranteed to be correct.
+
+If it says an element may be present, the application usually performs a database lookup for confirmation because false positives are possible.
+
+Advantages:
+
+Extremely memory efficient
+Very fast lookups
+Reduces unnecessary database queries
+Scales well for massive datasets
+
+Disadvantages:
+
+False positives are possible.
+Elements cannot be easily removed in a standard Bloom Filter.
+Does not store the actual data.
+
+Common use cases:
+
+Checking whether a URL has been visited.
+Database query optimization.
+Web crawlers.
+Cache optimization.
+Spam filtering.
+
+Large companies like Google and Facebook use Bloom Filters to reduce unnecessary database operations.
+
+Key Points
+
+Bloom Filters are probabilistic.
+They never produce false negatives.
+They may produce false positives.
+They reduce expensive database lookups.

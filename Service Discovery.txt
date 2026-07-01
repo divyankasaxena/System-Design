@@ -1,0 +1,61 @@
+In a microservices environment, service instances are constantly created, destroyed, and restarted. Their IP addresses change frequently.
+
+Hardcoding service addresses is therefore impractical.
+
+Service Discovery allows services to locate each other dynamically.
+
+Each service registers itself with a Service Registry when it starts.
+
+Other services query the registry to find healthy instances.
+
+To ensure only active services receive requests, each service periodically sends a Heartbeat.
+
+If heartbeats stop, the registry removes that instance from the available list.
+
+Two common discovery models are:
+
+Client-Side Discovery
+
+The client contacts the Service Registry, selects a healthy instance, and communicates directly with it.
+
+Advantages:
+
+Flexible
+Client controls load balancing
+
+Disadvantages:
+
+Discovery logic must exist in every client.
+Server-Side Discovery
+
+The client sends requests to a Load Balancer.
+
+The Load Balancer queries the Service Registry and forwards requests to healthy service instances.
+
+Advantages:
+
+Simpler clients
+Centralized routing
+
+Distributed Coordination helps multiple services work safely together.
+
+Common coordination tasks include:
+
+Leader Election
+Distributed Locking
+Configuration Management
+Cluster Membership
+Failover Handling
+
+Popular coordination tools include:
+
+ZooKeeper
+etcd
+Consul
+
+Key Points
+
+Service Discovery eliminates hardcoded service addresses.
+Services register themselves automatically.
+Heartbeats detect failed instances.
+Distributed Coordination ensures services cooperate safely.

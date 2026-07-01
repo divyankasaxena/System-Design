@@ -1,0 +1,35 @@
+As applications scale, a single cache server can become a bottleneck. Distributed Caching solves this problem by spreading cached data across multiple cache servers, allowing the system to handle higher traffic and larger datasets.
+
+Instead of storing all cached data on one server, the application distributes data among several cache nodes. A hashing mechanism, often Consistent Hashing, determines which cache server stores a particular key.
+
+Advantages:
+
+Improved scalability
+Better fault tolerance
+Higher cache capacity
+Faster response times
+Reduced database load
+
+If one cache server fails, only a small portion of cached data is lost, while the remaining cache continues to function.
+
+Challenges:
+
+Cache synchronization
+Cache invalidation
+Data redistribution when servers are added or removed
+Handling cache misses efficiently
+
+Popular distributed caching solutions include:
+
+Redis Cluster
+Memcached
+Hazelcast
+Apache Ignite
+
+Distributed caching is widely used in e-commerce platforms, social media applications, gaming systems, and large-scale APIs.
+
+Key Points
+
+Distributed caching spreads data across multiple cache servers.
+It improves scalability and availability.
+Consistent Hashing is commonly used for data distribution.

@@ -1,0 +1,48 @@
+Database replication improves availability and read performance by maintaining multiple copies of the same data.
+
+There are two primary replication strategies:
+
+Synchronous Replication
+
+In synchronous replication, data is written to the primary database and all replicas before the transaction is considered complete.
+
+Advantages:
+
+Strong consistency
+No stale reads
+Suitable for financial systems
+
+Disadvantages:
+
+Higher latency
+Slower write performance
+Reduced availability if replicas become unreachable
+Asynchronous Replication
+
+In asynchronous replication, the primary database confirms the write immediately and sends updates to replicas afterward.
+
+Advantages:
+
+Faster writes
+Better availability
+Lower latency
+
+Disadvantages:
+
+Temporary replication delay
+Users may read outdated data
+Possible data loss if the primary fails before replication completes
+
+Choosing between synchronous and asynchronous replication depends on business requirements.
+
+Examples:
+
+Banking applications often prefer synchronous replication.
+Social media platforms commonly use asynchronous replication.
+
+Key Points
+
+Replication creates multiple copies of data.
+Synchronous replication prioritizes consistency.
+Asynchronous replication prioritizes performance and availability.
+Replication improves fault tolerance and read scalability.
